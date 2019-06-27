@@ -18,11 +18,19 @@ I also included the top 10 up and down regulated substrates as the volcano plot 
 The 2nd part of this analysis involved the calculation of the kinase scores.
 Firstly I had to find the inhibited kinases by matching the substrate in the text file to the created database.
 Kinase Score Formula
+
 𝑠𝑐𝑜𝑟𝑒=((𝑠 ̅−𝑝 ̅)√𝑚)/𝛿
+
 Where 𝑠 ̅  represents the mean log2 fold change of known 
+
 substrates of the given kinase 
+
 𝑝 ̅  represents the mean log2 change of all substrates in the dataset
- m represents the total number of  substrates that matched to a specific kinase
-  δ denotes the standard deviation of the log2 fold change across all substrates in the dataset
+
+m represents the total number of  substrates that matched to a specific kinase
+
+δ denotes the standard deviation of the log2 fold change across all substrates in the dataset
+
 (Wiredja, Koyutürk and Chance, 2017)
+
 After doing that I used the formula above to calculated the kscore for each kinase.Then display them in  a barplot going from highest to lowest up and downregulated substrates. I also showed them the top 10 up and downregulated kinase so they can see this information and it may be of use to them.
